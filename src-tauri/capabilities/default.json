@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nickelpack/nk/main/schemas/tauri-capability-2.json",
+  "identifier": "default",
+  "description": "Default permissions for ClaudePulse",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "positioner:default"
+  ]
+}

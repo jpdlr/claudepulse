@@ -1,0 +1,91 @@
+.card {
+  background: var(--md-sys-color-surface);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stats {
+  font-size: var(--text-xs);
+  color: var(--md-sys-color-on-surface-variant);
+  font-variant-numeric: tabular-nums;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-xs);
+  height: 48px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.barCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  height: 100%;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  background: var(--md-sys-color-tertiary);
+  opacity: 0.7;
+  transition: height var(--transition-base), opacity var(--transition-fast);
+  min-height: 2px;
+  margin-top: auto;
+}
+
+.bar:hover {
+  opacity: 1;
+}
+
+.dayLabel {
+  font-size: 9px;
+  color: var(--md-sys-color-on-surface-variant);
+  text-transform: uppercase;
+}
+
+.totals {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.totalItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.totalLabel {
+  font-size: var(--text-xs);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.totalValue {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,41 @@
+.card {
+  background: var(--md-sys-color-surface);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+.costs {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.costItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.costLabel {
+  font-size: var(--text-xs);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.costValue {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--md-sys-color-on-surface);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}

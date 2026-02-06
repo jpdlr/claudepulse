@@ -1,0 +1,84 @@
+@import './theme.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  overflow: hidden;
+  background: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  color: var(--md-sys-color-on-background);
+  line-height: 1.5;
+}
+
+/* Transparent wrapper — provides space for rounded corners */
+.popover-wrapper {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.popover {
+  width: 100%;
+  max-height: calc(100vh - 16px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--md-sys-color-background);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  box-shadow: var(--shadow-popover);
+}
+
+.popover::-webkit-scrollbar {
+  width: 4px;
+}
+
+.popover::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.popover::-webkit-scrollbar-thumb {
+  background: var(--md-sys-color-outline);
+  border-radius: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: 0 var(--spacing-lg) var(--spacing-lg);
+}
+
+.loading-state,
+.error-state {
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: var(--md-sys-color-background);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  box-shadow: var(--shadow-popover);
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: var(--text-sm);
+}
+
+.error-state {
+  color: var(--md-sys-color-error);
+}

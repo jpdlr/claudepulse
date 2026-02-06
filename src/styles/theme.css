@@ -1,0 +1,155 @@
+/* ClaudePulse — Claude-inspired Design Tokens */
+
+:root,
+[data-theme='light'] {
+  /* Primary — Claude terracotta */
+  --md-sys-color-primary: #c2572a;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #fbe8df;
+  --md-sys-color-on-primary-container: #6e2e12;
+
+  /* Secondary — Warm stone */
+  --md-sys-color-secondary: #78716c;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f5f5f4;
+  --md-sys-color-on-secondary-container: #44403c;
+
+  /* Tertiary — Claude accent for usage meters */
+  --md-sys-color-tertiary: #d97757;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #fde8e0;
+  --md-sys-color-on-tertiary-container: #7c3a1e;
+
+  /* Warning — Warm amber */
+  --md-sys-color-warning: #b45309;
+  --md-sys-color-warning-container: #fef3c7;
+
+  /* Error */
+  --md-sys-color-error: #dc2626;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #fee2e2;
+
+  /* Success */
+  --md-sys-color-success: #16a34a;
+  --md-sys-color-success-container: #dcfce7;
+
+  /* Surface hierarchy */
+  --md-sys-color-surface: #ffffff;
+  --md-sys-color-on-surface: #1c1917;
+  --md-sys-color-surface-dim: #fafaf9;
+  --md-sys-color-surface-variant: #f5f5f4;
+  --md-sys-color-on-surface-variant: #78716c;
+  --md-sys-color-surface-container: #f5f5f4;
+  --md-sys-color-surface-container-high: #e7e5e4;
+
+  /* Background */
+  --md-sys-color-background: #fafaf9;
+  --md-sys-color-on-background: #1c1917;
+
+  /* Outline */
+  --md-sys-color-outline: #d6d3d1;
+  --md-sys-color-outline-variant: #e7e5e4;
+
+  /* Model-specific colors */
+  --color-model-opus: #a855f7;
+  --color-model-sonnet: #d97757;
+  --color-model-haiku: #059669;
+}
+
+[data-theme='dark'] {
+  /* Primary — Claude terracotta (lighter on dark) */
+  --md-sys-color-primary: #e8a68b;
+  --md-sys-color-on-primary: #1c1917;
+  --md-sys-color-primary-container: #5c2d14;
+  --md-sys-color-on-primary-container: #fbe8df;
+
+  /* Secondary */
+  --md-sys-color-secondary: #a8a29e;
+  --md-sys-color-on-secondary: #1c1917;
+  --md-sys-color-secondary-container: #44403c;
+  --md-sys-color-on-secondary-container: #e7e5e4;
+
+  /* Tertiary — meters */
+  --md-sys-color-tertiary: #d97757;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #5c2d14;
+  --md-sys-color-on-tertiary-container: #fbe8df;
+
+  /* Warning */
+  --md-sys-color-warning: #fbbf24;
+  --md-sys-color-warning-container: #78350f;
+
+  /* Error */
+  --md-sys-color-error: #f87171;
+  --md-sys-color-on-error: #1c1917;
+  --md-sys-color-error-container: #7f1d1d;
+
+  /* Success */
+  --md-sys-color-success: #4ade80;
+  --md-sys-color-success-container: #14532d;
+
+  /* Surface hierarchy — warm charcoal tones */
+  --md-sys-color-surface: #292524;
+  --md-sys-color-on-surface: #e7e5e4;
+  --md-sys-color-surface-dim: #1c1917;
+  --md-sys-color-surface-variant: #3a3533;
+  --md-sys-color-on-surface-variant: #a8a29e;
+  --md-sys-color-surface-container: #33302e;
+  --md-sys-color-surface-container-high: #44403c;
+
+  /* Background — deep warm charcoal */
+  --md-sys-color-background: #1c1917;
+  --md-sys-color-on-background: #e7e5e4;
+
+  /* Outline */
+  --md-sys-color-outline: #57534e;
+  --md-sys-color-outline-variant: #3a3533;
+
+  /* Model-specific colors */
+  --color-model-opus: #c084fc;
+  --color-model-sonnet: #e8a68b;
+  --color-model-haiku: #34d399;
+}
+
+/* Typography — macOS system fonts */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  --font-mono: 'SF Mono', 'Menlo', monospace;
+
+  --text-xs: 0.6875rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.8125rem;
+  --text-lg: 0.9375rem;
+  --text-xl: 1.125rem;
+  --text-2xl: 1.5rem;
+}
+
+/* Shape */
+:root {
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+}
+
+/* Spacing — compact for popover */
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 6px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+}
+
+/* Elevation */
+:root {
+  --shadow-popover: 0 8px 30px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Transitions */
+:root {
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+}
